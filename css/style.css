@@ -559,8 +559,8 @@ body {
 }
 
 .footer-links div a li {
-  line-height: 1.5rem;
-  /* margin-bottom: 0.3rem; */
+  /* line-height: 1.5rem; */
+  margin-bottom: 0.3rem;
 }
 
 .footer-icon {
@@ -757,13 +757,13 @@ body {
     width: 80%;
   }
 }
-
-/* media-query */
-/* media-query */
+/* ================ */
+/* ================ */
 @media screen and (max-width: 800px) {
   .hamburger-header {
     display: block;
     cursor: pointer;
+    transition: 4s ease-in-out;
   }
 
   .hide-hamburger {
@@ -800,9 +800,211 @@ body {
     opacity: 0.7;
   }
 }
-
+/* ================ */
+/* ================ */
 /* mobile screen size */
 @media screen and (max-width: 450px) {
+  .navbar {
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+  }
+  .navbar div:first-child img {
+    width: 120px;
+  }
+  /*=== hero section ====*/
+  .hero-header {
+    display: block;
+    /* justify-content: flex-end; */
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: right;
+  }
+
+  .hero-msg {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .hero-msg div:first-child {
+    margin-top: 0rem;
+    font-size: 1rem;
+  }
+
+  .hero-msg div:first-child i {
+    color: var(--primary-clr);
+    font-size: 1.5rem;
+  }
+
+  .hero-msg div:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .hero-msg div:nth-child(2) h1:nth-child(2) {
+    color: var(--primary-clr);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    /* font-size: 1rem; */
+  }
+
+  .hero-msg div:last-child {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+
+  .hero-msg div:last-child span {
+    color: var(--primary-clr);
+    display: inline;
+  }
+
+  .mini-info-header {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .mini-info-header div {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .mini-info-header div h1 {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+
+  .mini-info-header div p {
+    color: var(--primary-clr);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .features-header {
+    margin-top: 1rem;
+    display: block;
+    padding: 1.5rem;
+  }
+
+  /* === second and third feature === */
+  .second-feature-header,
+  .third-feature-header {
+    display: block;
+    margin-top: 0;
+    padding: 1.5rem;
+    /* margin: auto; */
+  }
+
+  .second-feature-header div:first-child img {
+    margin-bottom: 0rem;
+  }
+
+  .second-feature-info h1,
+  .third-feature-info h1 {
+    margin-top: 4rem;
+  }
+
+  .second-feature-header div:first-child img,
+  .third-feature-header div:last-child img {
+    width: 90vw;
+  }
+
+  .third-feature-header div:last-child img {
+    margin-top: 4rem;
+  }
+
+  .review-info {
+    display: block;
+    padding: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .review-info div:first-child p {
+    margin-bottom: 1rem;
+  }
+
+  .review-info div:last-child p {
+    margin-left: 0rem;
+  }
+
+  .review-box-header {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .partners-header div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .partners-header div a img {
+    width: 50vw;
+  }
+  /* === service section === */
+  .service-header {
+    display: block;
+    padding: 0rem;
+    padding-left: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-btn {
+    margin-top: 2rem;
+  }
+  .contact-details,
+  .contactus-header {
+    display: block;
+  }
+
+  .contactus-header {
+    padding: 1.5rem;
+  }
+
+  .contactus-header div:last-child textarea {
+    padding: 2rem;
+    /* margin: auto; */
+    display: flex;
+  }
+
+  /* foooter section */
+  .footer-header {
+    padding: 1.5rem;
+  }
+
+  .footer-info {
+    display: block;
+    justify-content: left;
+  }
+  .footer-info > div:first-child {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .footer-links,
+  .footer-socials {
+    display: block;
+  }
+
+  .footer-links div {
+    margin-left: 0rem;
+  }
+
+  .footer-icon hr {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links div h4 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .footer-socials div a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
 }
 
 /* other mini-screen size */
