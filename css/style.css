@@ -758,6 +758,8 @@ body {
   }
 }
 
+/* media-query */
+/* media-query */
 @media screen and (max-width: 800px) {
   .hamburger-header {
     display: block;
@@ -775,9 +777,11 @@ body {
     margin-top: 5rem;
     position: absolute;
     padding-top: 2rem;
-    top: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
+    /* transform: translateX(0%); */
     transition: 1.5s ease-in-out;
+    scroll-behavior: smooth;
   }
 
   .navlinks ul {
